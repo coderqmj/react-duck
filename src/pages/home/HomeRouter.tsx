@@ -5,8 +5,8 @@ import { Provider } from 'react-redux';
 import HomeDuck from './HomeDuck';
 import Home from './index';
 
-
 export function HomeRouteRender() {
+  // const a = 1
   const duckRuntime = new DuckRuntime(new HomeDuck());
   const ConnectComponent = duckRuntime.connectRoot()(Home);
   return (
